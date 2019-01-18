@@ -1,0 +1,45 @@
+body{
+    background-color: aqua;
+}
+.uno{
+    grid-area: cabecera;
+}
+.seis{
+    grid-area: subtitulo;
+}
+.dos{
+    grid-area: menu;
+}
+.tres{
+    grid-area: seccion;
+}
+.cuatro{
+    grid-area: lateral;
+}
+.cinco{
+    grid-area: pie;
+}
+.contenedor>div{
+    background-color: rgb(4, 62, 187);
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+    height: 15vh;
+    filter: drop-shadow(.2em .2em .2em);
+    border-radius: 10px;
+}
+.contenedor{
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgb(2, 62, 85);
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+    'cabecera cabecera cabecera cabecera'
+    'subtitulo subtitulo subtitulo subtitulo'
+    'menu seccion seccion seccion'
+    'menu lateral lateral lateral'
+    'pie pie pie pie';
+    padding: 20px;
+    border-radius: 10px;
+}
